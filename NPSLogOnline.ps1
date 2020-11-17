@@ -4,7 +4,7 @@
 #
 Param(
     #Активные файлы NPS-Radius сервера. Должны быть разделены символом из $DelimiterOfFilesList
-    $LogFiles = "\\10.6.105.33\c$\Windows\System32\LogFiles\IN2009.log,\\10.6.105.30\c$\Windows\System32\LogFiles\IN2009.log",
+    $LogFiles = "\\192.168.10.10\c$\Windows\System32\LogFiles\IN2009.log,\\192.168.10.11\c$\Windows\System32\LogFiles\IN2009.log",
     #ОТКЛЮЧЕНО. Сколько строк лога надо прочесть при старте скрипта. Когда сделал обработку нескольких лог файлов почему то перестало работать
     #$CountFirstReadLines = 10,
     #По какому полю упорядочивает выводимые результаты. Допустимые поля берутся из объекта $OneVPNSessionDesc
