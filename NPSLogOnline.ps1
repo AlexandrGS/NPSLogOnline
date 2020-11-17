@@ -1,4 +1,5 @@
-﻿#Анализируя логи Windows NPS-Radius сервера показывает информацию о активных VPN-сессиях. Логи в DTS-формате. Все пользователи появляются примерно через 5 минут работы скрипта
+#https://github.com/AlexandrGS/NPSLogOnline
+#Анализируя логи Windows NPS-Radius сервера показывает информацию о активных VPN-сессиях. Логи в DTS-формате. Все пользователи появляются примерно через 5 минут работы скрипта
 #Такое время потому что Radius-клиент посялает пакеты о состоянии соединения Radius-серверу примерно каждые 5 минут. Так у моего сервера.
 #
 Param(
@@ -237,7 +238,7 @@ function HandleOneLineLog([string]$OneLineLog){
 }
 
 Write-Host "Анализ DTS-логов NPS-Radius сервера Windows. Показывает онлайн пользователей. Версия от 04.11.2020"
-Write-Host "Автор Александр Ситько email:Alexandr.Sitko@gmail.com"
+Write-Host "https://github.com/AlexandrGS/NPSLogOnline"
 Write-Warning "Всех пользователей покажет примерно через 5-6 минут работы скрипта"
 #Get-Content $LogFiles -Wait -Tail $CountFirstReadLines | ForEach-Object { HandleOneLineLog  $_ }
 
